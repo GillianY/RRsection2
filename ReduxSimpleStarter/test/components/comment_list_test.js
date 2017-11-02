@@ -5,19 +5,18 @@ describe('CommentList',()=>{
     let component ;
 
     beforeEach(()=>{
-        const props = {comments: ['New Comment', 'Other new comment']};  
+        const props = {comments: ['New Comment', 'Other new comment']};
             component = renderComponent(CommentList,null, props);
         }
     );
 
     it('shows a li for each comment',()=>{
-        expect(component.find('li').length).to.equal(2);      
+        expect(component.find('li').length).to.equal(2);
     });
     
-    it('show comment list contents',()=>{
+    it('shows each comment that is provided',()=>{ //text, html
         expect(component).to.contain('New Comment');
         expect(component).to.contain('Other new comment');
-  
     });
 
 });
