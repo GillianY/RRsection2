@@ -13,4 +13,5 @@ function mapStateToProps(state){ //not yet create the reducer : comment
     return { comments: state.comments};
 } 
 
+
 export default connect(mapStateToProps)(CommentList);
