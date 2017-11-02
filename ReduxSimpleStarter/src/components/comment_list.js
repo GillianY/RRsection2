@@ -1,7 +1,6 @@
 import React from 'react'
 import  {connect} from 'react-redux';
 
-//no state -> functional component
 
 const CommentList = (props)=>{
     const list = props.comments.map(comment => <li key={comment}>{comment}</li>);
